@@ -5,7 +5,7 @@ export function homeBtnText() {
     homeBtn.textContent = "Home";
 }
 
-const content = document.getElementById("content")
+export const content = document.getElementById("content")
 
 export function homeContent() {
     const contentContainer = document.createElement("div");
@@ -22,7 +22,7 @@ export function homeContent() {
 
     let summary = document.querySelector('.restaurant-detail0');
     summary.textContent = `Welcome to Flavorscape Bistro, where global flavors meet exceptional service. Located in the heart of the city, our cozy restaurant offers a diverse menu crafted with the finest ingredients sourced locally and abroad. Whether you're indulging in savory starters or decadent desserts, each dish promises a culinary adventure. Our attentive staff ensures a memorable dining experience, perfect for intimate dinners or casual gatherings. Join us at Flavorscape Bistro for a taste sensation that will leave you wanting more.`
-    summary.style.cssText = " min-height: 20%; width: 70%; margin: 20px auto 20px auto;border: 1px solid black; padding: 25px;"
+    summary.style.cssText = " min-height: 20%; width: 70%; margin: 20px auto 20px auto;border: 3px solid black; padding: 25px;"
 
 
     let hoursContainer = document.querySelector(".restaurant-detail1");
@@ -84,7 +84,7 @@ function contentContainerFactory(iterations, parentContainer) {
         restaurantDetails.classList.add(`restaurant-detail${i}`);
         parentContainer.appendChild(restaurantDetails);
         restaurantDetails.textContent = " ";
-        restaurantDetails.style.cssText = " min-height: 20%; width: 70%; margin: 20px auto 20px auto;border: 1px solid black;"
+        restaurantDetails.style.cssText = " min-height: 20%; width: 70%; margin: 20px auto 20px auto;border: 3px solid black;"
 
     }
 
